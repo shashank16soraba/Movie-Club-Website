@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majili❤️</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<style>
+    body{
+        position: relative;
+    }
+    .container1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    video{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 750px;
+        height: 500px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ff2828;
+        
+    }
+
+
+    .related ul{
+        position: absolute;
+        top: 10%;
+        display: grid;
+        left: 65%;
+        gap: 10px;
+        grid-template-columns: repeat(1.1fr);
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .related img{
+        width: 450px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ff2828;
+    }
+
+    .related ul li a:hover img{
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .comments{
+        text-align: center;
+        position: absolute;
+        top: 95%;
+        left: 10%;
+        width: 47%;
+        height: 100%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ff2828;
+    }
+
+    .comments input{
+        width: 90%;
+        height: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px #ff2828;
+    }
+
+    .comments button{
+        width: 10%;
+        height: 50px;
+        background-color: #ff2828;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 5px #ff2828;
+    }
+
+    .comments button:hover{
+        background-color: #fff;
+        color: #ff2828;
+        box-shadow: 0 0 10px #ff2828;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .comments p{
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        left: 10%;
+        box-shadow: 0 0 10px #ff2828;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    .back {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        font-size: 20px;
+        box-shadow: 0 0 10px #ff2828;
+    }
+
+    .back a {
+        text-decoration: none;
+        color: #ff2828;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .back a:hover {
+        background-color: #ff2828;
+        color: #fff;
+        box-shadow: 0 0 10px #ff2828;
+        transition: all 0.3s ease-in-out;
+    }
+
+    @media(max-width:640px){
+        body{
+            position: relative;
+            background-size: 900px;
+        }
+        .container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        video{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 350px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff2828;
+            
+        }
+    
+    
+        .related ul{
+            position: absolute;
+            top: 10%;
+            display: grid;
+            left: 420px;
+            gap: 10px;
+            grid-template-columns: repeat(1.1fr);
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+        }
+    
+        .related img{
+            width: 250px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff2828;
+        }
+    
+        .related ul li a:hover img{
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+        }
+    
+        .comments{
+            text-align: center;
+            position: absolute;
+            top: 65%;
+            left: 10%;
+            width: 87%;
+            height: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff2828;
+        }
+    
+        .comments input{
+            width: 90%;
+            height: 50px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px #ff2828;
+        }
+    
+        .comments button{
+            width: 30%;
+            height: 50px;
+            background-color: #ff2828;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 5px #ff2828;
+        }
+    
+        .comments button:hover{
+            background-color: #fff;
+            color: #ff2828;
+            box-shadow: 0 0 10px #ff2828;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        .comments p{
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            left: 10%;
+            box-shadow: 0 0 10px #ff2828;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+    
+        .back {
+            position: absolute;
+            top: 5%;
+            left: 3%;
+            font-size: 20px;
+            box-shadow: 0 0 10px #ff2828;
+        }
+    
+        .back a {
+            text-decoration: none;
+            color: #ff2828;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    
+        .back a:hover {
+            background-color: #ff2828;
+            color: #fff;
+            box-shadow: 0 0 10px #ff2828;
+            transition: all 0.3s ease-in-out;
+        }
+
+    }
+
+</style>
+<body>
+
+    <div class="back">
+        <a href="./index.html">Back</a>
+    </div>
+    
+
+    <div class="container1">
+
+        <video src="./videos/Gen-3 Alpha Turbo 1788863587, Cropped - 20e23b7d-a, M 5.mp4" controls></video>
+
+    </div>
+
+    <div class="related">
+        <ul>
+            <li><a href=""><img src="https://miro.medium.com/v2/resize:fit:1400/1*r-o0gQBVpaiqs6IQxlfCCw.jpeg" alt=""></a></li>
+            <li><a href=""><img src="https://images.gem.cbc.ca/v1/synps-cbc/show/perso/cbc_northofnorth_ott_program_v01.jpg?impolicy=ott&im=Resize=1200&quality=75" alt=""></a></li>
+            <li><a href=""><img src="https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVY95KGGrRuRxFgpXkSnRWFIqSI7KSNi3E1ZNB7ickZgskb1nAmRN-8WacrBHKtgj21q08uhK4XeHW8n2wTZIopTXNPrkEOuGKQm.jpg?r=c57" alt=""></a></li>
+            <li><a href=""><img src="https://i.ytimg.com/vi/V9kQp6q4z00/maxresdefault.jpg" alt=""></a></li>
+        
+        </ul>
+
+    </div>
+
+    <div class="comments">
+        <h2>Comments Section</h2>
+        <input type="text" placeholder="Add a comment..." id="comment-input">
+        <button id="comme">Comment</button>
+        <p class="comment"></p>
+
+    </div>
+
+</body>
+<script>
+
+    document.getElementById("comme").addEventListener("click", function(){
+        var comment = document.getElementById("comment-input").value;
+        var commentSection = document.querySelector(".comment");
+        commentSection.innerHTML += "<p>" + comment + "</p> <br><p></p> <br>";
+        document.getElementById("comment-input").value = "";
+    });
+
+</script>
+
+</html>

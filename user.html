@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myspace</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<style>
+
+    .logo{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        height: 100vh;
+    }
+    .logo img{
+        justify-content: center;
+        height: 150px;
+    }
+
+    .logo h2{
+        font-size: 30px;
+        color: #ff2828;
+        text-align: center;
+    }
+
+#pack{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #f9d423, #a1ffce);
+    box-shadow: 0 0 10px #ff2828
+    
+}
+
+#pack:hover{
+    background: linear-gradient(to right, #a1ffce, #f9d423);
+    box-shadow: 0 0 20px #ff2828;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo a{
+    position: absolute;
+    bottom: 550px;
+    left: 600px;
+    font-size: 20px;
+    box-shadow: 0 0 10px #ff2828;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a:hover{
+    background: linear-gradient(to right, #a1ffce, #f9d423);
+    box-shadow: 0 0 20px #ff2828;
+    transition: all 0.3s ease-in-out;
+}
+
+</style>
+<body>
+
+    
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/8792/8792047.png" alt="">
+        <h2>Harsha Gowda SV</h2>
+        <button id="pack">Premium</button>
+        <a href="./index.html">Back</a>
+    </div>
+
+</body>
+</html>
